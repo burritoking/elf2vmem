@@ -1,0 +1,17 @@
+CAPI=2:
+
+name: "bci:cad:elf2vmem:1.0"
+description: "Script to convert elf to vmem format."
+
+filesets:
+  python_src:
+    files:
+      - elf2vmem.py
+      - mem.py
+      - secded_gen.py
+    file_type: pythonSource
+
+targets:
+  default:
+    filesets:
+      - python_src
